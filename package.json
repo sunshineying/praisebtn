@@ -1,0 +1,27 @@
+{
+  "name": "praisebutton",
+  "version": "1.0.0",
+  "description": "点赞+1功能",
+  "main": "",
+  "scripts": {
+    "build": "babel src -d lib/js",
+    "start": "npm run build && serve lib"
+  },
+  "author": "wy",
+  "license": "ISC",
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-es2015-modules-umd": "^6.24.1",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "serve": "^6.5.3"
+  },
+  "dependencies": {
+    "jasmine-core": "^3.1.0",
+    "karma": "^2.0.0",
+    "karma-babel-preprocessor": "^7.0.0",
+    "karma-jasmine": "^1.1.1",
+    "karma-phantomjs-launcher": "^1.0.4"
+  }
+}
