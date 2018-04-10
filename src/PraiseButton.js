@@ -3,6 +3,7 @@
  * @class
  */
 
+
 class PraiseButton {
     constructor(initCount = 0) {
         this.PraiseCount = initCount;
@@ -16,5 +17,6 @@ class PraiseButton {
     changeCount() {}
 
 }
+
 
 export default PraiseButton;

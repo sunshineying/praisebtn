@@ -19,7 +19,6 @@ import PraiseButton from "./PraiseButton.js";
 
         this.showCountNode = this.node.find('.priase-count span');
 
-        this.handlePraise();
     }
     
     

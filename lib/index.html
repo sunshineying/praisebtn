@@ -19,16 +19,25 @@
 		<div class="finger four"></div>						
 	</div>
 	<script>
-		SystemJS.import('./js/Thumb.js').then(function(m) {
-			const Thumb = m.default;
-			new Thumb({
+		
+		SystemJS.config({
+			baseURL: './js'
+		});
+
+		SystemJS.import('Thumb.js').then(function(m) {
+			$.extend({
+				praise: m.default
+			});
+			callBack();
+		});
+
+		function callBack() {
+			var f = new $.praise({
 				praiseNode: document.getElementById('praise-box')
 			});
-
-			$.extend({
-				praise: Thumb
-			});
-		});
+			f.handlePraise();
+		}
+		
 	</script>
 </body>
 </html>

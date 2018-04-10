@@ -5,7 +5,8 @@
   "main": "",
   "scripts": {
     "build": "babel src -d lib/js",
-    "start": "npm run build && serve lib"
+    "start": "npm run build && serve lib",
+    "test": "karma start"
   },
   "author": "wy",
   "license": "ISC",
